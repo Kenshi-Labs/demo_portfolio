@@ -28,7 +28,7 @@ export default function MandalaBackground() {
           {/* Desktop Layout (1280px+) */}
           <div className="hidden xl:block relative w-[1350px] h-[950px] rounded-[28px] overflow-hidden">
             <Image
-              src="/assets/Mask_group_2.png"
+              src="/assets/mask_group_2.png"
               alt="Notched Field"
               fill
               className="object-contain"

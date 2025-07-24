@@ -21,17 +21,17 @@ export default function Together() {
         <div className="hidden xl:block absolute top-[-40px] left-32 z-20 space-y-16">
           {[
             {
-              img: "/assets/Subtract_1.png",
+              img: "/assets/subtract_1.png",
               title: "Locate Mills",
               desc: "Maps to Locate Mills Nearby",
             },
             {
-              img: "/assets/Subtract_2.png",
+              img: "/assets/subtract_2.png",
               title: "Machinery Details",
               desc: "Find the latest machinery for your mill",
             },
             {
-              img: "/assets/Subtract_3.png",
+              img: "/assets/subtract_3.png",
               title: "Workforce / Vendor Details",
               desc: "Find skilled workforce near you",
             },

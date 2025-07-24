@@ -120,7 +120,7 @@ export default function FullScreenImageVideo() {
           >
             <video
               className="w-full h-full object-cover"
-              src="/assets/Rice_video.mp4"
+              src="/assets/rice_video.mp4"
               autoPlay
               loop
               muted

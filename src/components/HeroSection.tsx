@@ -69,7 +69,7 @@ export default function HeroSection() {
             {/* Sun Background Image */}
             <div className="absolute z-20 -top-[30%] left-[74%] w-[500px] h-[500px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/Sun.png"
+                src="/assets/sun.png"
                 alt="Sun"
                 width={500}
                 height={500}
@@ -104,7 +104,7 @@ export default function HeroSection() {
               {/* LEFT IMAGE SECTION */}
               <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/Rice_field.png"
+                  src="/assets/rice_field.png"
                   alt="Field Background"
                   width={400}
                   height={400}

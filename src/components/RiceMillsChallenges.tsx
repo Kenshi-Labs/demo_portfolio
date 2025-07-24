@@ -11,7 +11,7 @@ const slides = [
     text: "Rice millers struggle with procurement and supply‑chain issues.",
   },
   {
-    img: "Bran_grain",
+    img: "bran_grain",
     text: "There is a lack of access to modern milling technology.",
   },
   {
@@ -19,11 +19,11 @@ const slides = [
     text: "Inadequate storage facilities lead to high post‑harvest losses.",
   },
   {
-    img: "Field_Rice",
+    img: "field_rice",
     text: "Fluctuating market prices impact profitability.",
   },
   {
-    img: "Rice_grain",
+    img: "rice_grain",
     text: "Labor shortages and poor infrastructure are common challenges.",
   },
 ];
