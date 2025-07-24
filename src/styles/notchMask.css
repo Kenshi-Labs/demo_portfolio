@@ -1,0 +1,8 @@
+.mask-notch {
+  -webkit-mask-image: path("M 0,0 H 100% V 100% H 0 V 90% H 12% V 55% H 0 Z");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: path("M 0,0 H 100% V 100% H 0 V 90% H 12% V 55% H 0 Z");
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
