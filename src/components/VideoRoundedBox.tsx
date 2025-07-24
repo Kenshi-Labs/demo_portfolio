@@ -108,11 +108,11 @@ export default function FullScreenImageVideo() {
           <div
             className="hidden xl:block w-full h-full"
             style={{
-              WebkitMaskImage: "url('/assets/maskgroup.png')",
+              WebkitMaskImage: "url('/assets/banner.png')",
               WebkitMaskRepeat: "no-repeat",
               WebkitMaskPosition: "center",
               WebkitMaskSize: "contain",
-              maskImage: "url('/assets/maskgroup.png')",
+              maskImage: "url('/assets/banner.png')",
               maskRepeat: "no-repeat",
               maskPosition: "center",
               maskSize: "contain",
@@ -120,7 +120,7 @@ export default function FullScreenImageVideo() {
           >
             <video
               className="w-full h-full object-cover"
-              src="/assets/rice_video.mp4"
+              src="/assets/banner_video.mp4"
               autoPlay
               loop
               muted
