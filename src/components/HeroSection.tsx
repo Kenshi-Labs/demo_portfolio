@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-8 sm:py-12">
-      <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-12">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-8 sm:py-12 overflow-x-hidden">
+      <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2 overflow-x-hidden">
 
         {/* Custom CSS for 1440px breakpoint */}
         <style jsx>{`
@@ -64,11 +64,11 @@ export default function HeroSection() {
         </svg>
 
         {/* DESKTOP LAYOUT (1440px and above) */}
-        <div className="desktop-layout relative w-full h-[500px]">
+        <div className="desktop-layout relative w-full h-[500px] overflow-hidden">
           {/* IMAGES CONTAINER */}
           <div className="absolute inset-0">
             {/* Sun Background Image */}
-            <div className="absolute z-20 -top-[30%] left-[74%] w-[500px] h-[500px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="absolute z-20 -top-[25%] left-[80%] w-[450px] h-[450px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
                 src="/assets/sun.png"
                 alt="Sun"
@@ -79,7 +79,7 @@ export default function HeroSection() {
             </div>
 
             {/* Karnataka Map */}
-            <div className="absolute z-20 -top-[16%] left-[85%] w-[500px] h-[500px] opacity-40 transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="absolute z-20 -top-[1%] left-[90%] w-[400px] h-[400px] opacity-40 transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
                 src="/assets/karnataka_map.png"
                 alt="Map"
@@ -90,7 +90,7 @@ export default function HeroSection() {
             </div>
 
             {/* Birds */}
-            <div className="absolute z-20 top-[-6%] left-[84%] w-[500px] h-[500px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="absolute z-20 top-[-6%] left-[88%] w-[500px] h-[500px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
                 src="/assets/group_birds.png"
                 alt="Bird"
@@ -100,8 +100,8 @@ export default function HeroSection() {
               />
             </div>
 
-            {/* FLOATING RECTANGLE IMAGE BOX */}
-            <div className="absolute z-30 top-[386px] right-[5.6%] w-[55%] h-[25%] rounded-3xl overflow-hidden flex">
+            {/* FLOATING RECTANGLE IMAGE BOX - FIXED POSITIONING */}
+            <div className="absolute z-30 top-[384px] right-[1%] w-[60%] h-[22%] rounded-3xl overflow-hidden flex">
               {/* LEFT IMAGE SECTION */}
               <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
@@ -111,7 +111,7 @@ export default function HeroSection() {
                   height={400}
                   className="w-full h-[540px] object-cover object-right"
                 />
-                <div className="absolute bottom-[4%] left-[-10%] w-[50%] h-[50%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
+                <div className="absolute bottom-[4%] left-[-8%] w-[45%] h-[45%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
                     src="/assets/bag.png"
                     alt="Overlay Icon"
@@ -160,7 +160,7 @@ export default function HeroSection() {
             </div>
 
             {/* MAIN CENTER IMAGES */}
-            <div className="absolute z-50 bottom-[-51px] right-[270px] w-[380px] h-[450px] transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="absolute z-50 bottom-[-33px] right-[240px] w-[380px] h-[450px] transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
                 src="/assets/farmer.png"
                 alt="Main Farmer"
@@ -171,7 +171,7 @@ export default function HeroSection() {
             </div>
 
             {/* Crop */}
-            <div className="absolute z-40 bottom-[-30px] right-[205px] w-[350px] h-[500px] transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="absolute z-40 bottom-[-30px] right-[185px] w-[350px] h-[500px] transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
                 src="/assets/crop.png"
                 alt="Crop"
@@ -220,7 +220,7 @@ export default function HeroSection() {
         </div>
 
         {/* RESPONSIVE LAYOUT (768px to 1439px) */}
-        <div className="responsive-layout">
+        <div className="responsive-layout overflow-hidden">
           {/* RECTANGULAR CARD */}
           <div className="bg-[#cd8e4e] rounded-2xl p-6 sm:p-8 lg:p-10 mb-8 shadow-lg">
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-serif font-medium text-[#163A35] leading-tight font-elmessiri mb-4 sm:mb-6">
@@ -258,7 +258,7 @@ export default function HeroSection() {
             {/* Background Images */}
             <div className="absolute inset-0">
               {/* Sun Background Image */}
-              <div className="absolute z-10 top-[-10%] sm:top-[-20%] lg:top-[-10%] right-[15%] sm:right-[10%] lg:right-[15%] w-[200px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[450px] lg:h-[550px] transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="absolute z-10 top-[-10%] sm:top-[-20%] lg:top-[-18%] right-[15%] sm:right-[8%] lg:right-[15%] w-[200px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[450px] lg:h-[550px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/assets/Sun.png"
                   alt="Sun"
@@ -269,7 +269,7 @@ export default function HeroSection() {
               </div>
 
               {/* Karnataka Map */}
-              <div className="absolute z-10 top-[0%] sm:top-[1%] lg:top-[0%] right-[3%] sm:right-[2%] lg:right-[3%] w-[150px] h-[150px] sm:w-[280px] sm:h-[320px] lg:w-[380px] lg:h-[480px] opacity-25 transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="absolute z-10 top-[0%] sm:top-[1%] lg:top-[0%] right-[3%] sm:right-[-5%] lg:right-[1%] w-[150px] h-[150px] sm:w-[300px] sm:h-[350px] lg:w-[380px] lg:h-[480px] opacity-25 transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/assets/karnataka_map.png"
                   alt="Map"
@@ -280,7 +280,7 @@ export default function HeroSection() {
               </div>
 
               {/* Birds */}
-              <div className="absolute z-10 top-[0%] sm:top-[4%] lg:top-[0%] right-[5%] sm:right-[5%] lg:right-[5%] w-[120px] h-[120px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[450px] transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="absolute z-10 top-[0%] sm:top-[2%] lg:top-[2%] right-[5%] sm:right-[1%] lg:right-[3%] w-[120px] h-[120px] sm:w-[350px] sm:h-[400px] lg:w-[380px] lg:h-[480px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/assets/group_birds.png"
                   alt="Bird"
@@ -305,7 +305,7 @@ export default function HeroSection() {
               </div>
 
               {/* MAIN FARMER IMAGE */}
-              <div className="absolute z-40 bottom-[-25px] sm:bottom-[5px] lg:bottom-[-25px] left-[30%] w-[180px] h-[300px] sm:w-[340px] sm:h-[400px] lg:w-[380px] lg:h-[450px] transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="absolute z-40 bottom-[-25px] sm:bottom-[5px] lg:bottom-[-33px] left-[30%] w-[180px] h-[300px] sm:w-[340px] sm:h-[400px] lg:w-[400px] lg:h-[480px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/assets/farmer.png"
                   alt="Main Farmer"
@@ -316,7 +316,7 @@ export default function HeroSection() {
               </div>
 
               {/* Crop */}
-              <div className="absolute z-30 bottom-[40px] sm:bottom-[60px] lg:bottom-[40px] right-[27%] sm:right-[21%] lg:right-[27%] w-[160px] h-[230px] sm:w-[220px] sm:h-[320px] lg:w-[290px] lg:h-[400px] transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="absolute z-30 bottom-[40px] sm:bottom-[60px] lg:bottom-[35px] right-[27%] sm:right-[21%] lg:right-[27%] w-[160px] h-[230px] sm:w-[220px] sm:h-[320px] lg:w-[290px] lg:h-[400px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/assets/crop.png"
                   alt="Crop"
@@ -326,18 +326,18 @@ export default function HeroSection() {
                 />
               </div>
 
-              {/* FLOATING RECTANGLE IMAGE BOX */}
-              <div className="absolute z-0 bottom-[8%] right-[4%] w-[45%] sm:w-[calc(100%-3rem)] lg: lg:bottom-4 lg:right-4 lg:left-4 h-[25%] sm:h-[30%] lg:h-[calc(25%-1rem)] rounded-lg sm:rounded-xl lg:rounded-lg overflow-hidden flex shadow-lg">
+              {/* FLOATING RECTANGLE IMAGE BOX - RESPONSIVE FIXED */}
+              <div className="absolute z-0 bottom-[8%] lg:bottom-[2%] lg:right-[0%] w-[40%] sm:w-[100%] lg:w-[100%] h-[120px] sm:h-[120px] lg:h-[140px] rounded-lg sm:rounded-xl overflow-hidden flex shadow-lg">
                 {/* LEFT IMAGE SECTION */}
-                <div className="w-1/2 lg:w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
+                <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
                     src="/assets/Rice_field.png"
                     alt="Field Background"
                     width={200}
                     height={200}
-                    className="w-full h-[550px] object-cover object-right"
+                    className="w-full h-[600px] object-cover object-right"
                   />
-                  <div className="absolute bottom-[-15%] sm:bottom-[-3%] lg:bottom-[5%] left-[5%] lg:-left-[10%] w-[40%] sm:w-[25%] sm:h-[50%] lg:w-[40%] h-[60%] lg:h-[35%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
+                  <div className="absolute bottom-[5%] left-[3%] w-[35%] sm:w-[30%] lg:w-[35%] h-[40%] sm:h-[45%] lg:h-[50%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
                       src="/assets/bag.png"
                       alt="Overlay Icon"
@@ -349,9 +349,9 @@ export default function HeroSection() {
                 </div>
 
                 {/* RIGHT IMAGE SECTION */}
-                <div className="w-1/2 lg:w-1/2 bg-[#23433E] relative overflow-hidden flex items-center justify-center">
+                <div className="w-1/2 bg-[#23433E] relative overflow-hidden flex items-center justify-center">
                   {/* Decorative Ring */}
-                  <div className="absolute -bottom-[20%] sm:-bottom-[3%] lg:-bottom-[15%] -right-[10%] lg:-right-[8%] w-[80%] lg:w-[60%] h-[100%] lg:h-[115%] z-0 transition-transform duration-300 ease-in-out hover:scale-105">
+                  <div className="absolute -bottom-[10%] -right-[8%] w-[70%] sm:w-[65%] lg:w-[60%] h-[110%] sm:h-[115%] lg:h-[115%] z-0 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
                       src="/assets/ring.png"
                       alt="Decorative Ring"
@@ -362,7 +362,7 @@ export default function HeroSection() {
                   </div>
 
                   {/* Ox Image */}
-                  <div className="absolute bottom-[-10%] sm:bottom-[-7%] lg:bottom-[-8%] right-[-5%] lg:right-[-5%] w-[60%] sm:w-[55%] lg:w-[50%] h-[70%] sm:h-[80%] lg:h-[90%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
+                  <div className="absolute bottom-[-5%] right-[-2%] w-[55%] sm:w-[50%] lg:w-[50%] h-[80%] sm:h-[85%] lg:h-[90%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
                       src="/assets/ox.png"
                       alt="Overlay Icon Right"
@@ -378,7 +378,7 @@ export default function HeroSection() {
         </div>
 
         {/* MOBILE LAYOUT (Below 768px) */}
-        <div className="mobile-layout">
+        <div className="mobile-layout overflow-hidden">
           {/* RECTANGULAR CARD */}
           <div className="bg-[#cd8e4e] rounded-2xl p-6 mb-8 shadow-lg">
             <h1 className="text-xl font-serif font-medium text-[#163A35] leading-tight font-elmessiri mb-4">
