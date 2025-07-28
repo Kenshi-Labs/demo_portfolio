@@ -3,8 +3,9 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-      <div className="relative max-w-[1450px] w-full">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-8 sm:py-12">
+      <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-12">
+
         {/* Custom CSS for 1440px breakpoint */}
         <style jsx>{`
           .desktop-layout {
@@ -183,7 +184,7 @@ export default function HeroSection() {
 
           {/* LEFT-SIDE CLIPPED CARD */}
           <div
-            className="absolute top-0 left-0 z-20 bg-[#cd8e4e] text-white w-[50%] h-full p-10 shadow-lg"
+            className="absolute top-0 left-0 z-20 bg-[#cd8e4e] text-white w-[50%] h-full p-8 shadow-lg"
             style={{
               clipPath: "url(#roundedLCut)",
               borderRadius: "24px",
@@ -211,8 +212,8 @@ export default function HeroSection() {
             <p className="mt-4 text-sm leading-relaxed pr-4 font-poppins text-[#FFFFFF]">
               Our goal is to empower rice millers in West Bengal with the tools,
               knowledge, <br /> and network they need for long-term success.
-              Together, we contribute to <br /> the economy of the state to
-              build a resilient, future-ready rice milling <br /> industry in
+              Together, we contribute <br /> to  the economy of the state to
+              build a resilient, future-ready rice <br /> milling  industry in
               West Bengal, one grain at a time.
             </p>
           </div>

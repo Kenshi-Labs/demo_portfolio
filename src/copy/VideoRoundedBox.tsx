@@ -7,9 +7,9 @@ import { Icon } from "@iconify/react";
 export default function FullScreenImageVideo() {
   return (
     <section className="relative w-full h-screen bg-[#0d2824] overflow-hidden">
-      <div className="relative w-full h-full max-w-[1450px] mx-auto">
+      <div className="relative w-full h-full mx-auto">
         {/* Logo - Enhanced responsive positioning */}
-        <div className="absolute top-3 left-4 sm:top-4 sm:left-6 lg:top-2 lg:left-8 xl:top-1 xl:left-[125px] 2xl:top-0 2xl:left-[45px] z-30">
+        <div className="absolute top-3 left-4 sm:top-4 sm:left-6 lg:top-2 lg:left-8 xl:top-1 xl:left-[125px] 2xl:top-1 2xl:left-[82px] z-30">
           <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 flex items-center justify-center overflow-hidden rounded-full relative">
             <Image
               src="/assets/brma.png"
@@ -23,7 +23,7 @@ export default function FullScreenImageVideo() {
         </div>
 
         {/* Header Navigation - Enhanced responsive sizing */}
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-4 lg:right-8 xl:top-2 xl:right-5 2xl:top-1 2xl:right-5 z-30 flex items-center gap-2 sm:gap-3 lg:gap-1">
+        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-4 lg:right-8 xl:top-2 xl:right-5 2xl:top-1 2xl:right-12 z-30 flex items-center gap-2 sm:gap-3 lg:gap-1">
           {/* Mobile Menu Button - Show only on mobile */}
           <div className="lg:hidden">
             <button className="bg-[#23433E] rounded-full p-2 sm:p-3 shadow-lg">
@@ -79,7 +79,7 @@ export default function FullScreenImageVideo() {
 
           {/* User Profile Box - Enhanced responsive sizing */}
           <div className="flex rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] overflow-hidden shadow-md h-10 sm:h-12 lg:h-12 xl:h-11 2xl:h-14 font-manrope">
-            <div className="bg-[#23433E] px-2 pr-3 xl:px-2 xl:pr-2 2xl:px-3 2xl:pr-3 flex items-center gap-1 xl:gap-1 2xl:gap-3">
+            <div className="bg-[#23433E] px-2 pr-3 xl:px-2 xl:pr-2 2xl:px-3 2xl:pr-3 flex items-center gap-1 xl:gap-1 2xl:gap-2">
               <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-8 lg:h-8 xl:w-10 xl:h-9 2xl:w-10 2xl:h-10 relative rounded-full border border-white overflow-hidden">
                 <Image
                   src="/assets/user.jpg"
@@ -93,7 +93,7 @@ export default function FullScreenImageVideo() {
                 Nayanika
               </span>
             </div>
-            <div className="bg-[#21574F] px-2 xl:px-3 2xl:px-3 flex items-center justify-center">
+            <div className="bg-[#21574F] px-2 xl:px-3 2xl:px-4 flex items-center justify-center">
               <Icon
                 icon="mdi:logout"
                 className="text-white text-base sm:text-lg xl:text-base 2xl:text-2xl cursor-pointer"
@@ -132,7 +132,7 @@ export default function FullScreenImageVideo() {
           <div className="xl:hidden w-full h-full">
             <video
               className="w-full h-full object-cover"
-              src="/assets/banner_video.mp4"
+              src="/assets/Rice_video.mp4"
               autoPlay
               loop
               muted
@@ -236,7 +236,7 @@ export default function FullScreenImageVideo() {
         </div>
 
         {/* News Cards - HIDDEN ON MOBILE/TABLET (below lg), VISIBLE ON LARGE SCREENS */}
-        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[50%] xl:top-[54%] 2xl:top-[54%] right-2 sm:right-4 lg:right-6 xl:right-20 2xl:right-6 transform -translate-y-1/2 z-40">
+        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[50%] xl:top-[54%] 2xl:top-[54%] right-2 sm:right-4 lg:right-6 xl:right-20 2xl:right-16 transform -translate-y-1/2 z-40">
           <div className="w-[300px] lg:w-[320px] xl:w-[280px] 2xl:w-[300px] rounded-[24px] lg:rounded-[28px] xl:rounded-[32px] 2xl:rounded-[36px] bg-[#23433E] p-4 lg:p-5 xl:p-6 2xl:p-7">
             {/* Card 1 - Increased height and better proportions */}
             <div className="flex flex-col h-48 lg:h-52 xl:h-36 2xl:h-40 w-full mb-4 lg:mb-5 xl:mb-6 2xl:mb-7 rounded-xl xl:rounded-2xl 2xl:rounded-3xl overflow-hidden">
