@@ -328,80 +328,100 @@ const RiceMillsChallenges = () => {
 
         {/* Right Main Image Section */}
         <div className="flex-1 h-[550px] lg:h-[600px] xl:h-[650px] 2xl:h-[750px] relative lg:right-16 xl:right-20 2xl:right-32">
-          {/* Custom notched container using CSS */}
-          <div 
-            className="w-full h-full relative overflow-hidden"
-            style={{
-              clipPath: `polygon(
-                4% 0%, 
-                96% 0%, 
-                100% 4%, 
-                100% 96%, 
-                96% 100%, 
-                4% 100%, 
-                0% 96%, 
-                0% 90%, 
-                13% 90%, 
-                13% 87.4%, 
-                13% 55.8%, 
-                13% 54.6%, 
-                0% 54.6%, 
-                0% 4%
-              )`
-            }}
+          <svg
+            viewBox="0 0 1000 1000"
+            className="w-full h-full"
+            preserveAspectRatio="none"
           >
-            {/* Yellow border overlay */}
-            <div 
-              className="absolute inset-0 z-10 pointer-events-none"
-              style={{
-                background: 'transparent',
-                border: '3px solid #FFD700',
-                clipPath: `polygon(
-                  4% 0%, 
-                  96% 0%, 
-                  100% 4%, 
-                  100% 96%, 
-                  96% 100%, 
-                  4% 100%, 
-                  0% 96%, 
-                  0% 90%, 
-                  13% 90%, 
-                  13% 87.4%, 
-                  13% 55.8%, 
-                  13% 54.6%, 
-                  0% 54.6%, 
-                  0% 4%
-                )`,
-                borderRadius: '20px'
-              }}
-            />
-            
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div
-                key={currentIndex}
-                initial={{ x: direction === "next" ? 300 : -300, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: direction === "next" ? -300 : 300, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="w-full h-full relative"
-              >
-                <Image
-                  src={`/assets/${slides[currentIndex].img}.jpg`}
-                  alt="Rice Field"
-                  fill
-                  className="object-cover"
-                  priority
+            <defs>
+              <clipPath id="notchedClip" clipPathUnits="userSpaceOnUse">
+                <path
+                  d="
+                    M 40,2
+                    H 960
+                    Q 980,2 980,22
+                    V 960
+                    Q 980,980 960,980
+                    H 40
+                    Q 20,980 20,960
+                    V 902
+                    Q 20,886 36,886
+                    H 118
+                    Q 130,886 130,874
+                    V 558
+                    Q 130,546 118,546
+                    H 36
+                    Q 20,546 20,530
+                    V 22
+                    Q 20,2 40,2
+                    Z
+                  "
                 />
-              </motion.div>
-            </AnimatePresence>
-          </div>
+              </clipPath>
+            </defs>
+
+            <foreignObject
+              x="0"
+              y="0"
+              width="1000"
+              height="1000"
+              clipPath="url(#notchedClip)"
+            >
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={currentIndex}
+                  initial={{ x: direction === "next" ? 300 : -300, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: direction === "next" ? -300 : 300, opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="w-full h-full"
+                >
+                  <Image
+                    src={`/assets/${slides[currentIndex].img}.jpg`}
+                    alt="Rice Field"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </motion.div>
+              </AnimatePresence>
+            </foreignObject>
+
+            <path
+              d="
+                M 40,2
+                H 960
+                Q 980,2 980,22
+                V 960
+                Q 980,980 960,980
+                H 40
+                Q 20,980 20,960
+                V 902
+                Q 20,886 36,886
+                H 118
+                Q 130,886 130,874
+                V 558
+                Q 130,546 118,546
+                H 36
+                Q 20,546 20,530
+                V 22
+                Q 20,2 40,2
+                Z
+              "
+              fill="none"
+              stroke="#FFD700"
+              strokeWidth="3"
+              vectorEffect="non-scaling-stroke"
+              shapeRendering="geometricPrecision"
+            />
+          </svg>
 
           {/* Desktop Text Overlay */}
           <div
-            className="absolute bottom-12 lg:bottom-16 xl:bottom-18 2xl:bottom-20 left-20 lg:left-24 xl:left-24 2xl:left-24 z-20 flex items-stretch rounded-md overflow-hidden lg:h-[90px] lg:w-[280px] xl:h-[100px] xl:w-[440px] 2xl:h-[120px] 2xl:w-[470px]"
+            className="absolute bottom-20 lg:bottom-24 xl:bottom-28 2xl:bottom-32 left-20 lg:left-24 xl:left-24 2xl:left-24 z-20 flex items-stretch rounded-md overflow-hidden lg:h-[90px] lg:w-[280px] xl:h-[100px] xl:w-[440px] 2xl:h-[120px] 2xl:w-[470px]"
             style={{
               height: "90px",
-              width: "420px",
+              width: "420 px",
               background: "linear-gradient(to right, #16672B 0%, #242424 150%)",
               borderTopRightRadius: "12px",
               border: "1px solid rgba(255,255,255,0.2)",
