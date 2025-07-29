@@ -42,7 +42,7 @@ const VideoGallerySection = () => {
         style={{ backgroundImage: `url(${video.thumbnail})` }}
       />
       {!noOverlay && (
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0" />
       )}
       <div className="absolute top-4 right-4 z-10">
         <div
@@ -90,12 +90,12 @@ const VideoGallerySection = () => {
   return (
     <div className="relative bg-[#0d2824] min-h-screen flex items-center justify-center overflow-hidden">
       {/* Glassmorphism Box Behind */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center p-6">
+      <div className="absolute inset-0 z-0 flex items-center justify-center p-6 lg:p-8">
         <div className="w-full max-w-[1450px] h-full rounded-4xl bg-white/10 backdrop-blur-md" />
       </div>
 
       {/* Video Section */}
-      <section className="py-8 lg:py-20 px-6 max-w-[1350px] w-full mx-auto relative z-10">
+      <section className="py-8 lg:py-20 px-6 lg:px-12 max-w-[1350px] w-full mx-auto relative z-10">
         {/* Mobile Layout */}
         <div className="lg:hidden">
           <div className="text-center mb-12">
@@ -129,18 +129,21 @@ const VideoGallerySection = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-12 gap-8">
+        <div className="hidden lg:grid lg:grid-cols-12 gap-6 xl:gap-8">
           <div className="lg:col-span-6 relative">
+            {/* Main video card without text overlay */}
             <VideoCard
               video={videos[0]}
               className="h-[500px] lg:h-[600px]"
               isLarge
-              noOverlay
+              noOverlay={false}
               noHoverScale
             />
-            <div className="absolute bottom-4 left-8 text-white max-w-md z-20">
-              <h2 className="text-3xl lg:text-4xl text-white xl:text-4xl font-bold mb-1 leading-tight drop-shadow-2xl font-elmessiri">
-                Discover BRMA’s
+            {/* Separate text overlay with proper spacing and background */}
+            <div className="absolute inset-0 rounded-4xl" />
+            <div className="absolute bottom-6 left-6 right-6 text-white z-20">
+              <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-2  font-elmessiri">
+                Discover BRMA&#39;s
                 <br />
                 Legacy Today
               </h2>
@@ -150,9 +153,8 @@ const VideoGallerySection = () => {
                 <div className="w-3 h-1.5 bg-yellow-400 rounded-full" />
                 <div className="w-36 h-1.5 bg-yellow-400 rounded-full" />
               </div>
-              <p className="text-base lg:text-base mb-6 max-w-sm text-[var(--dark-gray)] font-poppins">
-                Follow Bengal Rice Mills Association’s <br /> journey to see how
-                we are turning our <br /> legacy into something exemplary.
+              <p className="text-sm lg:text-sm mb-6 max-w-sm text-white/90 font-poppins">
+                Follow Bengal Rice Mills Association&#39;s journey to see how we are turning our legacy into something exemplary.
               </p>
             </div>
           </div>

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Together() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center px-2 sm:px-4 py-6 sm:py-12 sm:pb-44">
-      <div className="relative flex max-w-[1400px] w-full xl:h-[650px] h-auto rounded-2xl overflow-visible">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center px-2 sm:px-4 py-8 sm:pb-48">
+      <div className="relative flex max-w-[1450px] xl:max-w-[1350px] 2xl:max-w-[1450px] w-full xl:h-[650px] h-auto rounded-2xl overflow-visible mx-auto px-4 sm:px-6 lg:px-2">
         {/* Desktop Layout (1280px and above) */}
         <div className="hidden xl:block w-full h-full rounded-2xl overflow-hidden">
           <Image
@@ -17,8 +17,8 @@ export default function Together() {
           />
         </div>
 
-        {/* Desktop Vertical Card Stack (Top-Left) */}
-        <div className="hidden xl:block absolute top-[-40px] left-32 z-20 space-y-16">
+        {/* Desktop Vertical Card Stack (Top-Left) - Aligned with ClipPathCard spacing */}
+        <div className="hidden xl:block absolute top-[-50px] left-8 sm:left-16 md:left-24 lg:left-32 xl:left-44 z-20 space-y-18">
           {[
             {
               img: "/assets/subtract_1.png",
@@ -80,8 +80,8 @@ export default function Together() {
           ))}
         </div>
 
-        {/* Desktop Right Side Box */}
-        <div className="hidden xl:block absolute right-0 top-[-50px] h-[750px] w-[45%] bg-[#11332e] rounded-r-[20px] text-white p-10 flex flex-col justify-between z-10 overflow-hidden">
+        {/* Desktop Right Side Box - Aligned with ClipPathCard spacing */}
+        <div className="hidden xl:block absolute right-16 xl:right-2 2xl:right-2 top-[-50px] h-[750px] w-[45%] bg-[#11332e] rounded-r-[20px] text-white p-10 flex flex-col justify-between z-10 overflow-hidden">
           <div>
             <h1 className="text-7xl font-semibold leading-tight ml-10 font-elmessiri">
               Bringing West <br />
@@ -107,8 +107,8 @@ export default function Together() {
           </div>
         </div>
 
-        {/* Mobile/Tablet Layout (1280px and below) */}
-        <div className="xl:hidden w-full flex flex-col space-y-6 sm:space-y-8">
+        {/* Mobile/Tablet Layout (1280px and below) - Using ClipPathCard container structure */}
+        <div className="xl:hidden w-full flex flex-col space-y-6 sm:space-y-8 max-w-[1450px] mx-auto">
           {/* Rectangular Feature Cards */}
           <div className="flex flex-col gap-4 sm:gap-6 w-full">
             {[

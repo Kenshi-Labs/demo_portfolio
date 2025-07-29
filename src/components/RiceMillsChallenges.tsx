@@ -90,7 +90,7 @@ const RiceMillsChallenges = () => {
     .slice(0, THUMBS);
 
   return (
-    <div className="bg-[#0d2824] text-white min-h-screen flex items-center justify-center py-8 sm:py-12 sm:pb-36">
+    <div className="bg-[#0d2824] text-white min-h-screen flex items-center justify-center py-8 sm:py-16">
       {/* Container matching hero section exactly */}
       <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2">
         {/* Mobile & Tablet Layout (< 1024px) */}
