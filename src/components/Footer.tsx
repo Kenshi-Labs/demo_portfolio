@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#0d2824] text-white px-4 sm:px-6 pb-4 sm:pb-6">
+    <footer className="relative bg-[#0d2824] text-white px-4 sm:px-6 pb-4 sm:pb-6 py-8 lg:py-12">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden top-16 sm:top-20 md:top-24">
         <Image

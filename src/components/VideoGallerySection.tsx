@@ -88,18 +88,18 @@ const VideoGallerySection = () => {
   );
 
   return (
-    <div className="relative bg-[#0d2824] min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative bg-[#0d2824] min-h-screen flex items-center justify-center overflow-hidden px-3">
       {/* Glassmorphism Box Behind */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center p-6 lg:p-8">
+      <div className="absolute inset-0 z-0 flex items-center justify-center p-6 lg:p-12">
         <div className="w-full max-w-[1450px] h-full rounded-4xl bg-white/10 backdrop-blur-md" />
       </div>
 
       {/* Video Section */}
-      <section className="py-8 lg:py-20 px-6 lg:px-12 max-w-[1350px] w-full mx-auto relative z-10">
+      <section className="py-12 lg:py-32 px-6 lg:px-12 max-w-[1350px] w-full mx-auto relative z-10">
         {/* Mobile Layout */}
         <div className="lg:hidden">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 font-work-sans text-white">
+          <div className="text-center mb-16">
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 font-work-sans text-white">
               Explore
               <br />
               <span className="text-[var(--primary-brown)] text-4xl font-work-sans">
@@ -111,7 +111,7 @@ const VideoGallerySection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[1, 2, 3, 4].map((i) => (
               <VideoCard
                 key={i}
@@ -121,7 +121,7 @@ const VideoGallerySection = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <Button variant="interior" className="shadow-lg">
               View All Videos
             </Button>
@@ -129,44 +129,44 @@ const VideoGallerySection = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-12 gap-6 xl:gap-8">
+        <div className="hidden lg:grid lg:grid-cols-12 gap-8 xl:gap-10">
           <div className="lg:col-span-6 relative">
             {/* Main video card without text overlay */}
             <VideoCard
               video={videos[0]}
-              className="h-[500px] lg:h-[600px]"
+              className="h-[600px] lg:h-[700px]"
               isLarge
               noOverlay={false}
               noHoverScale
             />
             {/* Separate text overlay with proper spacing and background */}
             <div className="absolute inset-0 rounded-4xl" />
-            <div className="absolute bottom-6 left-6 right-6 text-white z-20">
-              <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-2  font-elmessiri">
+            <div className="absolute bottom-8 left-8 right-8 text-white z-20">
+              <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 font-elmessiri">
                 Discover BRMA&#39;s
                 <br />
                 Legacy Today
               </h2>
-              <div className="flex items-center gap-1 mb-4">
+              <div className="flex items-center gap-1 mb-6">
                 <div className="w-3 h-1.5 bg-yellow-400 rounded-full" />
                 <div className="w-2 h-1.5 bg-yellow-400 rounded-full" />
                 <div className="w-3 h-1.5 bg-yellow-400 rounded-full" />
                 <div className="w-36 h-1.5 bg-yellow-400 rounded-full" />
               </div>
-              <p className="text-sm lg:text-sm mb-6 max-w-sm text-white/90 font-poppins">
+              <p className="text-sm lg:text-sm mb-8 max-w-sm text-white/90 font-poppins">
                 Follow Bengal Rice Mills Association&#39;s journey to see how we are turning our legacy into something exemplary.
               </p>
             </div>
           </div>
 
-          <div className="lg:col-span-3 flex flex-col gap-6">
-            <VideoCard video={videos[1]} className="h-[180px] lg:h-[220px]" />
-            <VideoCard video={videos[2]} className="h-[280px] lg:h-[350px]" />
+          <div className="lg:col-span-3 flex flex-col gap-8">
+            <VideoCard video={videos[1]} className="h-[220px] lg:h-[260px]" />
+            <VideoCard video={videos[2]} className="h-[320px] lg:h-[400px]" />
           </div>
 
-          <div className="lg:col-span-3 flex flex-col gap-6">
-            <VideoCard video={videos[3]} className="h-[280px] lg:h-[350px]" />
-            <VideoCard video={videos[4]} className="h-[180px] lg:h-[220px]" />
+          <div className="lg:col-span-3 flex flex-col gap-8">
+            <VideoCard video={videos[3]} className="h-[320px] lg:h-[400px]" />
+            <VideoCard video={videos[4]} className="h-[220px] lg:h-[260px]" />
           </div>
         </div>
       </section>

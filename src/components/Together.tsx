@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Together() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center px-2 sm:px-4 py-8 sm:pb-48">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center px-2 sm:px-4 py-8 sm:py-32 pb-16 lg:pb-44">
       <div className="relative flex max-w-[1450px] xl:max-w-[1350px] 2xl:max-w-[1450px] w-full xl:h-[650px] h-auto rounded-2xl overflow-visible mx-auto px-4 sm:px-6 lg:px-2">
         {/* Desktop Layout (1280px and above) */}
         <div className="hidden xl:block w-full h-full rounded-2xl overflow-hidden">

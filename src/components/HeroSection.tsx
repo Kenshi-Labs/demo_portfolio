@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-8 sm:py-12 overflow-x-hidden">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-0 sm:py-12 overflow-x-hidden">
       <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2 overflow-x-hidden">
 
         {/* Custom CSS for 1440px breakpoint */}
@@ -101,7 +101,7 @@ export default function HeroSection() {
             </div>
 
             {/* FLOATING RECTANGLE IMAGE BOX - FIXED POSITIONING */}
-            <div className="absolute z-30 top-[384px] right-[1%] w-[60%] h-[22%] rounded-3xl overflow-hidden flex">
+            <div className="absolute z-30 top-[384px] -right-[2%] w-[63%] h-[22%] rounded-3xl overflow-hidden flex">
               {/* LEFT IMAGE SECTION */}
               <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image

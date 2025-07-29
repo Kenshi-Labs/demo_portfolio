@@ -62,7 +62,7 @@ export default function ClipPathCard() {
   return (
     <div className="min-h-screen w-full bg-[#0d2824] relative">
       {/* Large Desktop Layout (1280px and above) */}
-      <div className="hidden xl:flex items-center justify-center py-8 sm:py-16 sm:pb-24 min-h-screen">
+      <div className="hidden xl:flex items-center justify-center py-8 sm:py-8 sm:pb-24 min-h-screen">
         {/* Container matching RiceMillsChallenges exactly */}
         <div className="relative w-full h-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-2">
           {/* Top Heading - Responsive across breakpoints */}

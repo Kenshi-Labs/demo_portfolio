@@ -1,15 +1,95 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 
 export default function FullScreenImageVideo() {
+  const videoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
+
+  useEffect(() => {
+    // Force video play on mobile devices
+    const playVideo = async (videoElement: HTMLVideoElement | null) => {
+      if (videoElement) {
+        try {
+          await videoElement.play();
+        } catch (error) {
+          console.log('Video autoplay failed:', error);
+          // Fallback: try to play on user interaction
+          const playOnInteraction = () => {
+            videoElement.play().catch(e => console.log('Manual play failed:', e));
+            document.removeEventListener('touchstart', playOnInteraction);
+            document.removeEventListener('click', playOnInteraction);
+          };
+          document.addEventListener('touchstart', playOnInteraction);
+          document.addEventListener('click', playOnInteraction);
+        }
+      }
+    };
+
+    // Play videos when component mounts
+    if (videoRef.current) playVideo(videoRef.current);
+    if (mobileVideoRef.current) playVideo(mobileVideoRef.current);
+  }, []);
+
   return (
-    <section className="relative w-full min-h-screen bg-[#0d2824] overflow-hidden">
-      <div className="relative w-full max-w-[1450px] mx-auto min-h-screen">
-        {/* Logo - Fixed mobile positioning */}
-        <div className="absolute top-4 left-4 sm:top-4 sm:left-6 lg:top-2 lg:left-8 xl:top-0 xl:left-[121px] 2xl:top-0 2xl:left-[48px] z-30">
+    <section className="relative w-full min-h-screen bg-[#0d2824] overflow-hidden py-4 sm:py-8">
+      {/* Match HeroSection container structure */}
+      <div className="relative w-full h-full max-w-[1450px] mx-auto px-1 sm:px-2 lg:px-2 overflow-x-hidden min-h-screen">
+
+        {/* Custom CSS for 1440px breakpoint - Same as HeroSection */}
+        <style jsx>{`
+          .desktop-layout {
+            display: none;
+          }
+          .responsive-layout {
+            display: block;
+          }
+          .mobile-layout {
+            display: none;
+          }
+
+          @media (max-width: 767px) {
+            .mobile-layout {
+              display: block;
+            }
+            .responsive-layout {
+              display: none;
+            }
+          }
+
+          @media (min-width: 1440px) {
+            .desktop-layout {
+              display: block;
+            }
+            .responsive-layout {
+              display: none;
+            }
+          }
+
+          /* Ensure video covers full area on mobile */
+          @media (max-width: 425px) {
+            .mobile-video-container {
+              position: fixed !important;
+              top: 0 !important;
+              left: 0 !important;
+              right: 0 !important;
+              bottom: 0 !important;
+              z-index: 1 !important;
+            }
+            
+            .mobile-video {
+              width: 100vw !important;
+              height: 100vh !important;
+              object-fit: cover !important;
+              object-position: center !important;
+            }
+          }
+        `}</style>
+
+        {/* Logo - Responsive positioning */}
+        <div className="absolute top-4 left-0 sm:top-4 sm:left-0 lg:top-2 lg:left-2 xl:top-0 xl:left-30 2xl:top-0.5 2xl:left-12 z-30">
           <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 xl:w-22 xl:h-22 2xl:w-24 2xl:h-24 flex items-center justify-center overflow-hidden rounded-full relative">
             <Image
               src="/assets/brma.png"
@@ -22,8 +102,8 @@ export default function FullScreenImageVideo() {
           </div>
         </div>
 
-        {/* Header Navigation - Fixed mobile layout */}
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-4 lg:right-8 xl:top-2 xl:right-9 2xl:top-2 2xl:right-4 z-30 flex items-center gap-2 sm:gap-3 lg:gap-1">
+        {/* Header Navigation - Responsive positioning */}
+        <div className="absolute top-4 right-0 sm:top-6 sm:right-0 lg:top-4 lg:right-2 xl:top-2 xl:right-10 2xl:top-3 2xl:right-14 z-30 flex items-center gap-2 sm:gap-3 lg:gap-1">
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button className="bg-[#23433E] rounded-full p-2 sm:p-3 shadow-lg">
@@ -35,11 +115,11 @@ export default function FullScreenImageVideo() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex bg-[#23433E] rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] px-2 xl:px-2 2xl:px-1.5 py-2 xl:py-2 2xl:py-1 shadow-lg items-center font-manrope">
+          <div className="hidden lg:flex bg-[#23433E] rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] px-2 xl:px-2 2xl:px-1.5 py-2 xl:py-1 2xl:py-0.5 shadow-lg items-center font-manrope">
             <nav className="flex items-center gap-1 xl:gap-1 2xl:gap-1 text-white text-sm xl:text-sm 2xl:text-[12px] font-medium">
               <Link
                 href="#"
-                className="flex items-center gap-1 xl:gap-2 px-3 xl:px-2 2xl:px-2.5 py-1 xl:py-1 2xl:py-2 bg-[#C29144] text-black font-semibold rounded-full "
+                className="flex items-center gap-1 xl:gap-2 px-3 xl:px-2 2xl:px-2 py-1 xl:py-1 2xl:py-1.5 bg-[#C29144] text-black font-semibold rounded-full "
               >
                 <Icon
                   icon="mdi:home-outline"
@@ -49,12 +129,12 @@ export default function FullScreenImageVideo() {
               </Link>
               <Link
                 href="#"
-                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-2 py-1 xl:py-1 2xl:py-1 rounded-full"
+                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-1 py-1 xl:py-1 2xl:py-0.5 rounded-full"
               >
                 About
               </Link>
               <div className="relative group">
-                <button className="flex items-center gap-1 xl:gap-2 hover:text-yellow-400 transition px-3 xl:px-2 2xl:px-5 py-1.5 xl:py-1 2xl:py-3 rounded-full">
+                <button className="flex items-center gap-1 xl:gap-2 hover:text-yellow-400 transition px-3 xl:px-2 2xl:px-3 py-1.5 xl:py-1 2xl:py-2 rounded-full">
                   Resources
                   <Icon
                     icon="mdi:chevron-down"
@@ -64,23 +144,23 @@ export default function FullScreenImageVideo() {
               </div>
               <Link
                 href="#"
-                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-2 py-1 xl:py-1 2xl:py-1 rounded-full"
+                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-1 py-1 xl:py-1 2xl:py-0.5 rounded-full"
               >
                 Membership
               </Link>
               <Link
                 href="#"
-                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-2 py-1 xl:py-1 2xl:py-1 rounded-full"
+                className="hover:text-yellow-400 transition px-2 xl:px-2 2xl:px-3 py-1 xl:py-1 2xl:py-0.5 rounded-full"
               >
                 Grievance
               </Link>
             </nav>
           </div>
 
-          {/* User Profile Box - Fixed mobile sizing */}
-          <div className="flex rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] overflow-hidden shadow-md h-10 sm:h-12 lg:h-12 xl:h-11 2xl:h-14 font-manrope">
-            <div className="bg-[#23433E] px-2 pr-2 sm:pr-3 xl:px-2 xl:pr-2 2xl:px-3 2xl:pr-3 flex items-center gap-1 xl:gap-1 2xl:gap-3">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-8 lg:h-8 xl:w-10 xl:h-9 2xl:w-10 2xl:h-10 relative rounded-full border border-white overflow-hidden">
+          {/* User Profile Box - Responsive sizing */}
+          <div className="flex rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] overflow-hidden shadow-md h-10 sm:h-12 lg:h-12 xl:h-11 2xl:h-11 font-manrope">
+            <div className="bg-[#23433E] px-2 pr-2 sm:pr-3 xl:px-2 xl:pr-2 2xl:px-2 2xl:pr-2 flex items-center gap-1 xl:gap-1 2xl:gap-2">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-8 lg:h-8 xl:w-10 xl:h-9 2xl:w-9 2xl:h-9 relative rounded-full border border-white overflow-hidden">
                 <Image
                   src="/assets/user.jpg"
                   alt="Profile"
@@ -102,46 +182,72 @@ export default function FullScreenImageVideo() {
           </div>
         </div>
 
-        {/* Video Container - Fixed mobile video display */}
+        {/* Video Container - Responsive */}
         <div className="w-full min-h-screen relative">
-          {/* Masked Video Container - Only for screens above xl */}
-          <div
-            className="hidden xl:block w-full min-h-screen absolute inset-1"
-            style={{
-              WebkitMaskImage: "url('/assets/banner.png')",
-              WebkitMaskRepeat: "no-repeat",
-              WebkitMaskPosition: "center",
-              WebkitMaskSize: "contain",
-              maskImage: "url('/assets/banner.png')",
-              maskRepeat: "no-repeat",
-              maskPosition: "center",
-              maskSize: "contain",
-            }}
-          >
-            <video
-              className="w-full h-full min-h-screen object-cover"
-              src="/assets/banner_video.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+          {/* DESKTOP LAYOUT (1440px and above) - Masked Video */}
+          <div className="desktop-layout">
+            <div
+              className="max-w-[1450px] min-h-screen absolute inset-0"
+              style={{
+                WebkitMaskImage: "url('/assets/banner.png')",
+                WebkitMaskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+                WebkitMaskSize: "contain",
+                maskImage: "url('/assets/banner.png')",
+                maskRepeat: "no-repeat",
+                maskPosition: "center",
+                maskSize: "contain",
+              }}
+            >
+              <video
+                ref={videoRef}
+                className="w-full h-full min-h-screen object-cover"
+                src="/assets/banner_video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+              />
+            </div>
           </div>
 
-          {/* Regular Video Container - For mobile and tablet */}
-          <div className="xl:hidden w-full min-h-screen absolute inset-0">
-            <video
-              className="w-full h-full min-h-screen object-cover"
-              src="/assets/banner_video.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+          {/* MOBILE LAYOUT - Enhanced for mobile devices */}
+          <div className="mobile-layout">
+            <div className="mobile-video-container w-full min-h-screen absolute inset-0">
+              <video
+                ref={mobileVideoRef}
+                className="mobile-video w-full h-full min-h-screen object-cover"
+                src="/assets/banner_video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                controls={false}
+                webkit-playsinline="true"
+                x-webkit-airplay="allow"
+              />
+            </div>
           </div>
 
-          {/* Main Content - Fixed mobile positioning and text sizing */}
-          <div className="absolute top-[25%] sm:top-[30%] lg:top-[32%] xl:top-[32%] 2xl:top-[28%] left-4 sm:left-6 lg:left-8 xl:left-[12%] 2xl:left-[12%] z-30 max-w-[85%] sm:max-w-[80%] lg:max-w-[70%] xl:max-w-[55%] 2xl:max-w-[700px] text-white flex items-start gap-2 sm:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
+          {/* RESPONSIVE LAYOUT (Tablets) - Regular Video */}
+          <div className="responsive-layout">
+            <div className="w-full min-h-screen absolute inset-0">
+              <video
+                className="w-full h-full min-h-screen object-cover"
+                src="/assets/banner_video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+              />
+            </div>
+          </div>
+
+          {/* Main Content - Responsive positioning to match HeroSection */}
+          <div className="absolute top-[25%] sm:top-[26%] lg:top-[28%] xl:top-[21%] 2xl:top-[28%] left-6 sm:left-8 lg:left-14 xl:left-[15%] 2xl:left-[8%] z-30 max-w-[85%] sm:max-w-[80%] lg:max-w-[70%] xl:max-w-[55%] 2xl:max-w-[700px] text-white flex items-start gap-2 sm:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
             {/* Decorative dots - Hidden on mobile, visible from sm up */}
             <div className="hidden sm:flex flex-col items-center mt-6 sm:mt-8 lg:mt-12 xl:mt-16 2xl:mt-14">
               <span className="w-1.5 xl:w-2 2xl:w-3 h-6 sm:h-8 lg:h-12 xl:h-20 2xl:h-24 rounded-full bg-[#F2C744] mb-2 xl:mb-3 2xl:mb-4" />
@@ -178,8 +284,8 @@ export default function FullScreenImageVideo() {
             </div>
           </div>
 
-          {/* Statistics Box - Fixed mobile positioning and sizing */}
-          <div className="absolute bottom-4 sm:bottom-8 lg:bottom-10 xl:bottom-5 2xl:bottom-8 left-4 sm:left-6 lg:left-8 xl:left-[12%] 2xl:left-[12%] right-4 sm:right-auto z-40 rounded-xl sm:rounded-2xl lg:rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] border-2 border-[#FFFFFF]">
+          {/* Statistics Box - Responsive positioning to match HeroSection */}
+          <div className="absolute bottom-4 sm:bottom-8 lg:bottom-10 xl:bottom-10 2xl:bottom-20 left-6 sm:left-8 lg:left-14 xl:left-[15%] 2xl:left-[8%] right-4 sm:right-auto z-40 rounded-xl sm:rounded-2xl lg:rounded-[24px] xl:rounded-[28px] 2xl:rounded-[32px] border-2 border-[#FFFFFF]">
             <div className="rounded-[10px] sm:rounded-[14px] lg:rounded-[22px] xl:rounded-[26px] 2xl:rounded-[30px] backdrop-blur-md bg-white/10 px-3 sm:px-4 lg:px-5 xl:px-6 2xl:px-8 py-3 sm:py-4 lg:py-4 xl:py-5 2xl:py-4 shadow-xl">
               <div className="flex items-center justify-evenly sm:justify-start sm:space-x-4 lg:space-x-6 xl:space-x-8 2xl:space-x-12 text-white font-manrope text-xs sm:text-sm xl:text-base 2xl:text-lg">
                 {/* Logo - Better mobile sizing */}
@@ -196,7 +302,7 @@ export default function FullScreenImageVideo() {
                 </div>
 
                 {/* Statistics - Better mobile layout */}
-                <div className="flex space-x-2 sm:space-x-3 lg:space-x-6 xl:space-x-8 2xl:space-x-10">
+                <div className="flex space-x-4 sm:space-x-3 lg:space-x-6 xl:space-x-8 2xl:space-x-10">
                   <div className="text-center">
                     <div className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-xl font-bold">
                       2500<sup className="text-xs">+</sup>
@@ -236,8 +342,8 @@ export default function FullScreenImageVideo() {
         </div>
 
         {/* News Cards - HIDDEN ON MOBILE/TABLET (below lg), VISIBLE ON LARGE SCREENS */}
-        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[56%] xl:top-[54%] 2xl:top-[54%] right-2 sm:right-4 lg:right-6 xl:right-30 2xl:right-6 transform -translate-y-1/2 z-40">
-          <div className="w-[300px] lg:w-[280px] xl:w-[250px] 2xl:w-[300px] rounded-[24px] lg:rounded-[28px] xl:rounded-[32px] 2xl:rounded-[36px] bg-[#23433E] p-4 lg:p-5 xl:p-6 2xl:p-7">
+        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[56%] xl:top-[54%] 2xl:top-[54.5%] right-0 sm:right-0 lg:right-2 xl:right-28 2xl:right-8 transform -translate-y-1/2 z-40">
+          <div className="w-[300px] lg:w-[280px] xl:w-[250px] 2xl:w-[280px] rounded-[24px] lg:rounded-[28px] xl:rounded-[32px] 2xl:rounded-[36px] bg-[#23433E] p-4 lg:p-5 xl:p-6 2xl:p-7">
             {/* Card 1 */}
             <div className="flex flex-col h-48 lg:h-48 xl:h-36 2xl:h-40 w-full mb-4 lg:mb-5 xl:mb-6 2xl:mb-7 rounded-xl xl:rounded-2xl 2xl:rounded-3xl overflow-hidden">
               <div className="relative h-[55%] lg:h-[58%] xl:h-[55%] 2xl:h-[58%] w-full">
