@@ -28,7 +28,7 @@ const Footer = () => {
                 alt="BRMA Logo"
                 width={80}
                 height={80}
-                className="sm:w-[100px] sm:h-[100px]"
+                className="sm:w-[121px] sm:h-[100px]"
               />
             </div>
             <p className="text-xs sm:text-sm text-[#FFFFFF] leading-relaxed mt-2 sm:mt-4 font-poppins text-center sm:text-left">

@@ -3,9 +3,9 @@ import React from "react";
 
 const TextBanner = () => {
   return (
-    <div className="w-full bg-[#0d2824] py-2 sm:py-3 md:py-0 px-2 sm:px-4 overflow-hidden">
+    <div className="w-full bg-[#0d2824] px-2 sm:px-4 overflow-hidden pb-4 sm:pb-16 md:pb-4 lg:pb-2 xl:pb-1 2xl:pb-0 pt-4 sm:pt-12 md:pt-2 lg:pt-6 xl:pt-2 2xl:pt-0">
       <div className="animate-ticker whitespace-nowrap">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-[#005C4E] tracking-wide leading-none font-elmessiri inline-block">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-[#0aa18b] tracking-wide leading-none font-elmessiri inline-block">
           Honoring Legacy, Uniting Rice Mills, Building the Future
         </h2>
       </div>

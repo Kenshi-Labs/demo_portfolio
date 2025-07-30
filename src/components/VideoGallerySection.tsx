@@ -29,7 +29,7 @@ const VideoGallerySection = () => {
     noHoverScale?: boolean;
   }) => (
     <div
-      className={`relative rounded-4xl overflow-hidden cursor-pointer group ${className}`}
+      className={`relative rounded-4xl overflow-hidden cursor-pointer group ${className} `}
     >
       <div
         className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 ${
@@ -88,14 +88,14 @@ const VideoGallerySection = () => {
   );
 
   return (
-    <div className="relative bg-[#0d2824] min-h-screen flex items-center justify-center overflow-hidden px-3">
+    <div className="relative bg-[#0d2824]  min-h-screen flex items-center justify-center overflow-hidden px-3">
       {/* Glassmorphism Box Behind */}
       <div className="absolute inset-0 z-0 flex items-center justify-center p-6 lg:p-12">
         <div className="w-full max-w-[1450px] h-full rounded-4xl bg-white/10 backdrop-blur-md" />
       </div>
 
       {/* Video Section */}
-      <section className="py-12 lg:py-32 px-6 lg:px-12 max-w-[1350px] w-full mx-auto relative z-10">
+      <section className="py-12 lg:py-32 px-6 lg:px-12 max-w-[1350px] w-full mx-auto relative z-10 ">
         {/* Mobile Layout */}
         <div className="lg:hidden">
           <div className="text-center mb-16">

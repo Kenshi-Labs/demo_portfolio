@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center py-0 sm:py-12 overflow-x-hidden">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center overflow-x-hidden pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-1 2xl:pb-0 pt-4 sm:pt-12 md:pt-8 lg:pt-10 xl:pt-14 2xl:pt-0">
       <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2 overflow-x-hidden">
 
         {/* Custom CSS for 1440px breakpoint */}
@@ -222,7 +222,7 @@ export default function HeroSection() {
         {/* RESPONSIVE LAYOUT (768px to 1439px) */}
         <div className="responsive-layout overflow-hidden">
           {/* RECTANGULAR CARD */}
-          <div className="bg-[#cd8e4e] rounded-2xl p-6 sm:p-8 lg:p-10 mb-8 shadow-lg">
+          <div className="bg-[#cd8e4e] rounded-2xl p-6 sm:p-8 lg:p-10 mb-4 shadow-lg">
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-serif font-medium text-[#163A35] leading-tight font-elmessiri mb-4 sm:mb-6">
               Bengal Rice Mills Association | Empowering Rice Millers
             </h1>
@@ -380,7 +380,7 @@ export default function HeroSection() {
         {/* MOBILE LAYOUT (Below 768px) */}
         <div className="mobile-layout overflow-hidden">
           {/* RECTANGULAR CARD */}
-          <div className="bg-[#cd8e4e] rounded-2xl p-6 mb-8 shadow-lg">
+          <div className="bg-[#cd8e4e] rounded-2xl p-6 mb-4 shadow-lg">
             <h1 className="text-xl font-serif font-medium text-[#163A35] leading-tight font-elmessiri mb-4">
               Bengal Rice Mills Association | Empowering Rice Millers
             </h1>

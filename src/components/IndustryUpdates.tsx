@@ -44,7 +44,7 @@ const updates = [
 
 export default function IndustryUpdates() {
   return (
-    <div className="bg-[#0d2824] text-white pt-20 px-4 md:px-8">
+    <div className="bg-[#0d2824] text-white  px-4 md:px-8 pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-2 2xl:pb-0 pt-4 sm:pt-12 md:pt-2 lg:pt-3 xl:pt-4 2xl:pt-4">
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-6xl font-medium font-elmessiri">

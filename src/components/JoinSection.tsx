@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MandalaBackground() {
   return (
-    <section className="relative w-full min-h-[60vh] bg-[#0d2824] overflow-hidden py-8 px-4 md:px-8">
+    <section className="relative w-full min-h-[60vh] bg-[#0d2824] overflow-hidden py-8 px-4 md:px-8 pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-4 2xl:pb-2 pt-4 sm:pt-12 md:pt-2 lg:pt-3 xl:pt-4 2xl:pt-0">
       <div className="relative max-w-[1450px] h-full mx-auto">
         {/* Right Large Mandala - Hidden on mobile */}
         <Image
@@ -11,7 +11,7 @@ export default function MandalaBackground() {
           alt="Right Mandala"
           width={600}
           height={600}
-          className="absolute right-4 top-1/2 -translate-y-1/2 opacity-15 pointer-events-none select-none hidden lg:block xl:w-[500px] xl:h-[500px] lg:w-[350px] lg:h-[350px]"
+          className="absolute right-8 top-64 -translate-y-1/2 opacity-15 pointer-events-none select-none hidden lg:block xl:w-[550px] xl:h-[550px] lg:w-[350px] lg:h-[350px]"
         />
 
         {/* Bottom Left Small Mandala - Hidden on mobile */}
@@ -24,9 +24,9 @@ export default function MandalaBackground() {
         />
 
         {/* Main Content Container */}
-        <div className="relative z-10 flex items-center justify-center min-h-[55vh]">
+        <div className="relative z-10 flex items-center justify-center min-h-[80vh]">
           {/* Desktop Layout (1280px+) */}
-          <div className="hidden xl:block relative w-[1450px] h-[600px] rounded-[28px] overflow-hidden">
+          <div className="hidden xl:block relative w-[1450px] h-[480px] rounded-[28px] overflow-hidden">
             <Image
               src="/assets/mask_group_2.png"
               alt="Notched Field"
@@ -36,7 +36,7 @@ export default function MandalaBackground() {
             />
 
             {/* Desktop Content */}
-            <div className="absolute top-[110px] left-[20px] text-white max-w-[600px]">
+            <div className="absolute top-[55px] left-[20px] text-white max-w-[600px]">
               <h2 className="text-[42px] leading-[48px] font-medium font-elmessiri">
                 Join BRMA Today: Strength in
                 <br />
@@ -49,7 +49,7 @@ export default function MandalaBackground() {
               </p>
             </div>
 
-            <div className="absolute top-[100px] xl:top-[100px] 2xl:top-[100px] right-[35px] xl:right-[22px] 2xl:right-[35px] w-[450px] h-[60px] xl:w-[450px] xl:h-[60px] 2xl:w-[450px] 2xl:h-[70px] bg-black/20 rounded-[16px] xl:rounded-[18px] 2xl:rounded-[20px] border border-white/20 flex items-center px-6 xl:px-8 2xl:px-10 text-white text-sm xl:text-base 2xl:text-lg">
+            <div className="absolute top-[100px] xl:top-[40px] 2xl:top-[25px] right-[35px] xl:right-[22px] 2xl:right-[35px] w-[450px] h-[60px] xl:w-[450px] xl:h-[60px] 2xl:w-[450px] 2xl:h-[70px] bg-black/20 rounded-[16px] xl:rounded-[18px] 2xl:rounded-[20px] border border-white/20 flex items-center px-6 xl:px-8 2xl:px-10 text-white text-sm xl:text-base 2xl:text-lg">
   <input
     type="text"
     placeholder="Your Name"
@@ -57,7 +57,7 @@ export default function MandalaBackground() {
   />
 </div>
 
-<div className="absolute top-[210px] xl:top-[210px] 2xl:top-[200px] left-[580px] xl:left-[540px] 2xl:left-[570px] w-[450px] h-[60px] xl:w-[450px] xl:h-[60px] 2xl:w-[450px] 2xl:h-[70px] bg-black/30 rounded-[16px] xl:rounded-[18px] 2xl:rounded-[20px] border border-white/20 flex items-center px-6 xl:px-8 2xl:px-10 text-white text-sm xl:text-base 2xl:text-lg">
+<div className="absolute top-[210px] xl:top-[140px] 2xl:top-[140px] left-[580px] xl:left-[540px] 2xl:left-[570px] w-[450px] h-[60px] xl:w-[450px] xl:h-[60px] 2xl:w-[450px] 2xl:h-[70px] bg-black/30 rounded-[16px] xl:rounded-[18px] 2xl:rounded-[20px] border border-white/20 flex items-center px-6 xl:px-8 2xl:px-10 text-white text-sm xl:text-base 2xl:text-lg">
   <input
     type="text"
     placeholder="Your Email"
@@ -65,14 +65,14 @@ export default function MandalaBackground() {
   />
 </div>
 
-<div className="absolute bottom-[80px] xl:bottom-[100px] 2xl:bottom-[90px] left-[35px] xl:left-[12px] 2xl:left-[15px] w-[1000px] h-[200px] xl:w-[1000px] xl:h-[200px] 2xl:w-[1050px] 2xl:h-[200px] bg-black/30 backdrop-blur-xs rounded-[20px] xl:rounded-[24px] 2xl:rounded-[28px] border border-white/20 flex items-start p-5 xl:p-6 2xl:p-8 text-white text-sm xl:text-base 2xl:text-lg">
+<div className="absolute bottom-[80px] xl:bottom-[30px] 2xl:bottom-[20px] left-[35px] xl:left-[12px] 2xl:left-[15px] w-[1000px] h-[200px] xl:w-[1000px] xl:h-[200px] 2xl:w-[1050px] 2xl:h-[200px] bg-black/30 backdrop-blur-xs rounded-[20px] xl:rounded-[24px] 2xl:rounded-[28px] border border-white/20 flex items-start p-5 xl:p-6 2xl:p-8 text-white text-sm xl:text-base 2xl:text-lg">
   <textarea
     placeholder="Description"
     className="bg-transparent outline-none w-full h-full resize-none placeholder-white font-poppins"
   />
 </div>
 
-            <div className="absolute bottom-[175px] right-[60px] flex flex-col items-start gap-3">
+            <div className="absolute bottom-[110px] right-[70px] flex flex-col items-start gap-3">
               <button className="bg-[#FFD100] text-black font-medium rounded-full px-12 py-[12px] text-lg flex items-center gap-3 font-poppins leading-none">
                 <span className="mt-[2px]">Submit</span>
                 <span className="mt-[2px]">

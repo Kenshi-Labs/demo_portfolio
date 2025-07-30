@@ -60,9 +60,9 @@ export default function ClipPathCard() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#0d2824] relative">
+    <div className="min-h-screen w-full bg-[#0d2824] relative pt-8 sm:pt-12 md:pt-4 lg:pt-4 xl:pt-12 2xl:pt-4 pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-2 2xl:pb-2">
       {/* Large Desktop Layout (1280px and above) */}
-      <div className="hidden xl:flex items-center justify-center py-8 sm:py-8 sm:pb-24 min-h-screen">
+      <div className="hidden xl:flex items-center justify-center py-4 sm:py-4 sm:pb-16 min-h-screen">
         {/* Container matching RiceMillsChallenges exactly */}
         <div className="relative w-full h-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-2">
           {/* Top Heading - Responsive across breakpoints */}
@@ -303,10 +303,10 @@ export default function ClipPathCard() {
       </div>
 
       {/* Stacked Layout (Below 1280px) */}
-      <div className="xl:hidden py-8 min-h-screen">
+      <div className="xl:hidden py-4 min-h-screen">
         {/* Container matching RiceMillsChallenges exactly */}
         <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2">
-          <div className="space-y-12">
+          <div className="space-y-8">
             {/* 1. Title Section */}
             <div className="text-center">
               <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug font-elmessiri">

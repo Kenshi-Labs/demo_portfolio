@@ -90,7 +90,7 @@ const RiceMillsChallenges = () => {
     .slice(0, THUMBS);
 
   return (
-    <div className="bg-[#0d2824] text-white min-h-screen flex items-center justify-center py-8 sm:py-12">
+    <div className="bg-[#0d2824] text-white min-h-screen flex items-center justify-center pb-12 sm:pb-16 md:pb-10 lg:pb-6 xl:pb-2 2xl:pb-8 pt-4 sm:pt-12 md:pt-4 lg:pt-1 xl:pt-0 2xl:pt-0">
       {/* Container matching hero section exactly */}
       <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2">
         {/* Mobile & Tablet Layout (< 1024px) */}
@@ -239,7 +239,7 @@ const RiceMillsChallenges = () => {
             </div>
 
             {/* Thumbnails Section - Adjusted positioning and size */}
-            <div className="h-[140px] lg:h-[180px] xl:h-[200px] 2xl:h-[250px] w-[780px] lg:w-[820px] xl:w-[920px] 2xl:w-[900px] mb-32 lg:mb-16 xl:mb-[200px] 2xl:mb-[200px] bg-[#23433E] rounded-2xl p-6 lg:p-6 xl:p-8 2xl:p-10 flex items-center relative overflow-hidden top-16 lg:top-17 xl:top-39 2xl:top-24">
+            <div className="h-[140px] lg:h-[180px] xl:h-[200px] 2xl:h-[250px] w-[780px] lg:w-[820px] xl:w-[920px] 2xl:w-[900px] mb-20 lg:mb-12 xl:mb-[140px] 2xl:mb-[140px] bg-[#23433E] rounded-2xl p-6 lg:p-6 xl:p-8 2xl:p-10 flex items-center relative overflow-hidden top-16 lg:top-17 xl:top-39 2xl:top-24">
 
             <div className="flex gap-6 lg:gap-3 xl:gap-8 2xl:gap-10 w-full lg:flex-row xl:flex-row-reverse 2xl:flex-row-reverse [&.animate]:flex-row-reverse">
 

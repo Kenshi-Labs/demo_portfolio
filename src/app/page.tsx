@@ -13,12 +13,13 @@ import JoinSection from "@/components/JoinSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="">
       <VideoRoundedBox />
       <HeroSection />
       <TextBanner />
-      <RiceMillsChallenges />
-      <Strategic />
+     
+        <RiceMillsChallenges />
+        <Strategic />
       <BannerText />
       <Together />
       <VideoGallerySection />
