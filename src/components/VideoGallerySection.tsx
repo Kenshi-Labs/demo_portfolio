@@ -90,8 +90,8 @@ const VideoGallerySection = () => {
   return (
     <div className="relative bg-[#0d2824]  min-h-screen flex items-center justify-center overflow-hidden px-3">
       {/* Glassmorphism Box Behind */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center p-6 lg:p-12">
-        <div className="w-full max-w-[1450px] h-full rounded-4xl bg-white/10 backdrop-blur-md" />
+      <div className="absolute inset-0 z-0 flex items-center justify-center py-6 lg:py-14 px-3 lg:px-14">
+        <div className="w-full max-w-[1600px] h-full rounded-4xl bg-white/10 backdrop-blur-md" />
       </div>
 
       {/* Video Section */}
@@ -141,7 +141,7 @@ const VideoGallerySection = () => {
             />
             {/* Separate text overlay with proper spacing and background */}
             <div className="absolute inset-0 rounded-4xl" />
-            <div className="absolute bottom-8 left-8 right-8 text-white z-20">
+            <div className="absolute bottom-6 left-0 right-8 text-white z-20">
               <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 font-elmessiri">
                 Discover BRMA&#39;s
                 <br />
@@ -153,8 +153,8 @@ const VideoGallerySection = () => {
                 <div className="w-3 h-1.5 bg-yellow-400 rounded-full" />
                 <div className="w-36 h-1.5 bg-yellow-400 rounded-full" />
               </div>
-              <p className="text-sm lg:text-sm mb-8 max-w-sm text-white/90 font-poppins">
-                Follow Bengal Rice Mills Association&#39;s journey to see how we are turning our legacy into something exemplary.
+              <p className="text-sm lg:text-base mb-8 max-w-sm text-white/90 font-poppins">
+                Follow Bengal Rice Mills Association&#39;s <br/> journey to see how we are turning our <br/> legacy into something exemplary.
               </p>
             </div>
           </div>
