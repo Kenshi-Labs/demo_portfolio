@@ -357,7 +357,7 @@ export default function FullScreenImageVideo() {
         </div>
 
         {/* News Cards - HIDDEN ON MOBILE/TABLET (below lg), VISIBLE ON LARGE SCREENS */}
-        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[56%] xl:top-[61.5%] 2xl:top-[54%] right-0 sm:right-0 lg:right-2 xl:right-6 2xl:right-9 transform -translate-y-46.5 z-40">
+        <div className="hidden lg:block absolute top-[45%] sm:top-[50%] lg:top-[56%] xl:top-[61.5%] 2xl:top-[55%] right-0 sm:right-0 lg:right-2 xl:right-6 2xl:right-9 transform -translate-y-46 z-40">
           <div className="w-[300px] lg:w-[280px] xl:w-[280px] 2xl:w-[300px] rounded-[24px] lg:rounded-[28px] xl:rounded-[32px] 2xl:rounded-[36px] bg-[#23433E] p-4 lg:p-5 xl:p-6 2xl:p-7">
             {/* Card 1 */}
             <div className="flex flex-col h-48 lg:h-48 xl:h-56 2xl:h-48 w-full mb-4 lg:mb-5 xl:mb-6 2xl:mb-7 rounded-xl xl:rounded-2xl 2xl:rounded-3xl overflow-hidden">
