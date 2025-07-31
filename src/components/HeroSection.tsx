@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center overflow-x-hidden pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-1 2xl:pb-0 pt-4 sm:pt-12 md:pt-8 lg:pt-10 xl:pt-14 2xl:pt-0">
+    <div className="min-h-screen bg-[#0d2824] flex items-center justify-center overflow-x-hidden pb-4 sm:pb-16 md:pb-2 lg:pb-4 xl:pb-1 2xl:pb-0 pt-4 sm:pt-12 md:pt-8 lg:pt-10 xl:pt-14 2xl:-mt-20">
       <div className="relative w-full h-full max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-2 overflow-x-hidden">
 
         {/* Custom CSS for 1440px breakpoint */}
