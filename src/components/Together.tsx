@@ -9,7 +9,7 @@ export default function Together() {
         {/* Desktop Layout (1280px and above) */}
         <div className="hidden xl:block w-full h-full rounded-2xl overflow-hidden">
           <Image
-            src="/assets/grain_rice.jpg"
+            src="https://brma-web.smepulse.in/assets/grain_rice.jpg"
             alt="Rice Field"
             width={1400}
             height={650}
@@ -21,17 +21,17 @@ export default function Together() {
         <div className="hidden xl:block absolute top-[-50px] left-8 sm:left-16 md:left-24 lg:left-32 xl:left-44 z-20 space-y-18">
           {[
             {
-              img: "/assets/subtract_1.png",
+              img: "https://brma-web.smepulse.in/assets/subtract_1.png",
               title: "Locate Mills",
               desc: "Maps to Locate Mills Nearby",
             },
             {
-              img: "/assets/subtract_2.png",
+              img: "https://brma-web.smepulse.in/assets/subtract_2.png",
               title: "Machinery Details",
               desc: "Find the latest machinery for your mill",
             },
             {
-              img: "/assets/subtract_3.png",
+              img: "https://brma-web.smepulse.in/assets/subtract_3.png",
               title: "Workforce / Vendor Details",
               desc: "Find skilled workforce near you",
             },
@@ -53,7 +53,7 @@ export default function Together() {
               {/* Bottom Mask */}
               <div className="absolute bottom-0 left-0 w-full h-[68px] z-10">
                 <Image
-                  src="/assets/mask.png"
+                  src="https://brma-web.smepulse.in/assets/mask.png"
                   alt="Card Mask"
                   layout="fill"
                   objectFit="cover"
@@ -98,7 +98,7 @@ export default function Together() {
           {/* Mandala Image */}
           <div className="absolute bottom-[5px] right-[2px] w-[350px] h-[350px]">
             <Image
-              src="/assets/mandala.png"
+              src="https://brma-web.smepulse.in/assets/mandala.png"
               alt="Mandala"
               width={350}
               height={350}
@@ -113,17 +113,17 @@ export default function Together() {
           <div className="flex flex-col gap-4 sm:gap-6 w-full">
             {[
               {
-                img: "/assets/Subtract_1.png",
+                img: "https://brma-web.smepulse.in/assets/subtract_1.png",
                 title: "Locate Mills",
                 desc: "Maps to Locate Mills Nearby",
               },
               {
-                img: "/assets/Subtract_2.png",
+                img: "https://brma-web.smepulse.in/assets/subtract_2.png",
                 title: "Machinery Details",
                 desc: "Find the latest machinery for your mill",
               },
               {
-                img: "/assets/Subtract_3.png",
+                img: "https://brma-web.smepulse.in/assets/subtract_3.png",
                 title: "Workforce / Vendor Details",
                 desc: "Find skilled workforce near you",
               },
@@ -182,7 +182,7 @@ export default function Together() {
             {/* Mandala Image */}
             <div className="absolute bottom-0 right-0 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] opacity-50 sm:opacity-70 md:opacity-90">
               <Image
-                src="/assets/mandala.png"
+                src="https://brma-web.smepulse.in/assets/mandala.png"
                 alt="Mandala"
                 fill
                 className="object-contain"

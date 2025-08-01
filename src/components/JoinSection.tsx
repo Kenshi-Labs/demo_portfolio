@@ -7,7 +7,7 @@ export default function MandalaBackground() {
       <div className="relative max-w-[1450px] h-full mx-auto">
         {/* Right Large Mandala - Hidden on mobile */}
         <Image
-          src="/assets/manadala.png"
+          src="https://brma-web.smepulse.in/assets/manadala.png"
           alt="Right Mandala"
           width={600}
           height={600}
@@ -16,7 +16,7 @@ export default function MandalaBackground() {
 
         {/* Bottom Left Small Mandala - Hidden on mobile */}
         <Image
-          src="/assets/manadala.png"
+          src="https://brma-web.smepulse.in/assets/manadala.png"
           alt="Left Bottom Mandala"
           width={250}
           height={250}
@@ -28,7 +28,7 @@ export default function MandalaBackground() {
           {/* Desktop Layout (1280px+) */}
           <div className="hidden xl:block relative w-[1450px] h-[480px] rounded-[28px] overflow-hidden">
             <Image
-              src="/assets/mask_group_2.png"
+              src="https://brma-web.smepulse.in/assets/mask_group_2.png"
               alt="Notched Field"
               fill
               className="object-contain"

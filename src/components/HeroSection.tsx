@@ -70,7 +70,7 @@ export default function HeroSection() {
             {/* Sun Background Image */}
             <div className="absolute z-20 -top-[25%] left-[80%] w-[450px] h-[450px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/sun.png"
+                src="https://brma-web.smepulse.in/assets/sun.png"
                 alt="Sun"
                 width={500}
                 height={500}
@@ -81,7 +81,7 @@ export default function HeroSection() {
             {/* Karnataka Map */}
             <div className="absolute z-20 -top-[1%] left-[90%] w-[400px] h-[400px] opacity-40 transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/karnataka_map.png"
+                src="https://brma-web.smepulse.in/assets/karnataka_map.png"
                 alt="Map"
                 width={400}
                 height={400}
@@ -92,7 +92,7 @@ export default function HeroSection() {
             {/* Birds */}
             <div className="absolute z-20 top-[-6%] left-[88%] w-[500px] h-[500px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/group_birds.png"
+                src="https://brma-web.smepulse.in/assets/group_birds.png"
                 alt="Bird"
                 width={500}
                 height={500}
@@ -105,7 +105,7 @@ export default function HeroSection() {
               {/* LEFT IMAGE SECTION */}
               <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/rice_field.png"
+                  src="https://brma-web.smepulse.in/assets/rice_field.png"
                   alt="Field Background"
                   width={400}
                   height={400}
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 />
                 <div className="absolute bottom-[4%] left-[-8%] w-[45%] h-[45%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/assets/bag.png"
+                    src="https://brma-web.smepulse.in/assets/bag.png"
                     alt="Overlay Icon"
                     width={110}
                     height={110}
@@ -127,7 +127,7 @@ export default function HeroSection() {
                 {/* Decorative Ring */}
                 <div className="absolute -bottom-[30%] -right-[5%] w-[75%] h-[129%] z-0 transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/assets/ring.png"
+                    src="https://brma-web.smepulse.in/assets/ring.png"
                     alt="Decorative Ring"
                     width={200}
                     height={200}
@@ -138,7 +138,7 @@ export default function HeroSection() {
                 {/* Ox Image */}
                 <div className="absolute bottom-[-15%] right-[-2%] w-[55%] h-[100%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/assets/ox.png"
+                    src="https://brma-web.smepulse.in/assets/ox.png"
                     alt="Overlay Icon Right"
                     width={160}
                     height={160}
@@ -151,7 +151,7 @@ export default function HeroSection() {
             {/* LIFTING CROP IMAGE */}
             <div className="absolute z-40 top-[235px] left-[50.2%] w-[200px] h-[300px] transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/lifting_crop.png"
+                src="https://brma-web.smepulse.in/assets/lifting_crop.png"
                 alt="Lifting Crop"
                 width={200}
                 height={300}
@@ -162,7 +162,7 @@ export default function HeroSection() {
             {/* MAIN CENTER IMAGES */}
             <div className="absolute z-50 bottom-[-33px] right-[240px] w-[380px] h-[450px] transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/farmer.png"
+                src="https://brma-web.smepulse.in/assets/farmer.png"
                 alt="Main Farmer"
                 width={400}
                 height={500}
@@ -173,7 +173,7 @@ export default function HeroSection() {
             {/* Crop */}
             <div className="absolute z-40 bottom-[-30px] right-[185px] w-[350px] h-[500px] transition-transform duration-300 ease-in-out hover:scale-105">
               <Image
-                src="/assets/crop.png"
+                src="https://brma-web.smepulse.in/assets/crop.png"
                 alt="Crop"
                 width={350}
                 height={500}
@@ -260,7 +260,7 @@ export default function HeroSection() {
               {/* Sun Background Image */}
               <div className="absolute z-10 top-[-10%] sm:top-[-20%] lg:top-[-18%] right-[15%] sm:right-[8%] lg:right-[15%] w-[200px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[450px] lg:h-[550px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/sun.png"
+                  src="https://brma-web.smepulse.in/assets/sun.png"
                   alt="Sun"
                   width={350}
                   height={350}
@@ -271,7 +271,7 @@ export default function HeroSection() {
               {/* Karnataka Map */}
               <div className="absolute z-10 top-[0%] sm:top-[1%] lg:top-[0%] right-[3%] sm:right-[-5%] lg:right-[1%] w-[150px] h-[150px] sm:w-[300px] sm:h-[350px] lg:w-[380px] lg:h-[480px] opacity-25 transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/karnataka_map.png"
+                  src="https://brma-web.smepulse.in/assets/karnataka_map.png"
                   alt="Map"
                   width={250}
                   height={250}
@@ -282,7 +282,7 @@ export default function HeroSection() {
               {/* Birds */}
               <div className="absolute z-10 top-[0%] sm:top-[2%] lg:top-[2%] right-[5%] sm:right-[1%] lg:right-[3%] w-[120px] h-[120px] sm:w-[350px] sm:h-[400px] lg:w-[380px] lg:h-[480px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/group_birds.png"
+                  src="https://brma-web.smepulse.in/assets/group_birds.png"
                   alt="Bird"
                   width={200}
                   height={200}
@@ -296,7 +296,7 @@ export default function HeroSection() {
               {/* LIFTING CROP IMAGE */}
               <div className="absolute z-30 top-[46%] sm:top-[35%] lg:top-[46%] left-[10%] w-[80px] h-[120px] sm:w-[230px] sm:h-[280px] lg:w-[250px] lg:h-[300px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/lifting_crop.png"
+                  src="https://brma-web.smepulse.in/assets/lifting_crop.png"
                   alt="Lifting Crop"
                   width={130}
                   height={195}
@@ -307,7 +307,7 @@ export default function HeroSection() {
               {/* MAIN FARMER IMAGE */}
               <div className="absolute z-40 bottom-[-25px] sm:bottom-[5px] lg:bottom-[-33px] left-[30%] w-[180px] h-[300px] sm:w-[340px] sm:h-[400px] lg:w-[400px] lg:h-[480px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/farmer.png"
+                  src="https://brma-web.smepulse.in/assets/farmer.png"
                   alt="Main Farmer"
                   width={280}
                   height={350}
@@ -318,7 +318,7 @@ export default function HeroSection() {
               {/* Crop */}
               <div className="absolute z-30 bottom-[40px] sm:bottom-[60px] lg:bottom-[35px] right-[27%] sm:right-[21%] lg:right-[27%] w-[160px] h-[230px] sm:w-[220px] sm:h-[320px] lg:w-[290px] lg:h-[400px] transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
-                  src="/assets/crop.png"
+                  src="https://brma-web.smepulse.in/assets/crop.png"
                   alt="Crop"
                   width={250}
                   height={360}
@@ -331,7 +331,7 @@ export default function HeroSection() {
                 {/* LEFT IMAGE SECTION */}
                 <div className="w-1/2 relative flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/assets/rice_field.png"
+                    src="https://brma-web.smepulse.in/assets/rice_field.png"
                     alt="Field Background"
                     width={200}
                     height={200}
@@ -339,7 +339,7 @@ export default function HeroSection() {
                   />
                   <div className="absolute bottom-[5%] left-[3%] w-[35%] sm:w-[30%] lg:w-[35%] h-[40%] sm:h-[45%] lg:h-[50%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
-                      src="/assets/bag.png"
+                      src="https://brma-web.smepulse.in/assets/bag.png"
                       alt="Overlay Icon"
                       width={100}
                       height={100}
@@ -353,7 +353,7 @@ export default function HeroSection() {
                   {/* Decorative Ring */}
                   <div className="absolute -bottom-[10%] -right-[8%] w-[70%] sm:w-[65%] lg:w-[60%] h-[110%] sm:h-[115%] lg:h-[115%] z-0 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
-                      src="/assets/ring.png"
+                      src="https://brma-web.smepulse.in/assets/ring.png"
                       alt="Decorative Ring"
                       width={100}
                       height={100}
@@ -364,7 +364,7 @@ export default function HeroSection() {
                   {/* Ox Image */}
                   <div className="absolute bottom-[-5%] right-[-2%] w-[55%] sm:w-[50%] lg:w-[50%] h-[80%] sm:h-[85%] lg:h-[90%] z-10 transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
-                      src="/assets/ox.png"
+                      src="https://brma-web.smepulse.in/assets/ox.png"
                       alt="Overlay Icon Right"
                       width={80}
                       height={80}
@@ -414,7 +414,7 @@ export default function HeroSection() {
           {/* SINGLE MOBILE IMAGE */}
           <div className="relative h-[400px] overflow-hidden rounded-2xl">
             <Image
-              src="/assets/component.png"
+              src="https://brma-web.smepulse.in/assets/component.png"
               alt="Bengal Rice Mills Association - Farmer with Rice"
               width={800}
               height={600}

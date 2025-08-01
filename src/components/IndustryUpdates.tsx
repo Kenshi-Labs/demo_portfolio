@@ -9,7 +9,7 @@ const updates = [
     subtitle:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever seen the 1500s",
     date: "12th Nov 2024",
-    image: "/assets/industry_updates.jpg",
+    image: "https://brma-web.smepulse.in/assets/industry_updates.jpg",
   },
   {
     title: (
@@ -24,21 +24,21 @@ const updates = [
     subtitle:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever seen the 1500s",
     date: "12th Nov 2024",
-    image: "/assets/industry_updates4.jpg",
+    image: "https://brma-web.smepulse.in/assets/industry_updates4.jpg",
   },
   {
     title: "Bengal rice mills halt contracts over milling charge disputes.",
     subtitle:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever seen the 1500s",
     date: "12th Nov 2024",
-    image: "/assets/industry_updates2.jpg",
+    image: "https://brma-web.smepulse.in/assets/industry_updates2.jpg",
   },
   {
     title: "Centre lifts non-basmati rice export ban, Bengal mills relieved.",
     subtitle:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever seen the 1500s",
     date: "12th Nov 2024",
-    image: "/assets/industry_updates3.jpg",
+    image: "https://brma-web.smepulse.in/assets/industry_updates3.jpg",
   },
 ];
 

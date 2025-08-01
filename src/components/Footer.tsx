@@ -9,7 +9,7 @@ const Footer = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden top-16 sm:top-20 md:top-24">
         <Image
-          src="/assets/corp.png"
+          src="https://brma-web.smepulse.in/assets/corp.png"
           alt="Footer Background"
           fill
           className="object-cover object-top"
@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="flex-1 sm:pr-6 mb-4 sm:mb-0">
             <div className="flex justify-center sm:justify-start mb-3 sm:mb-0">
               <Image
-                src="/assets/brma.png"
+                src="https://brma-web.smepulse.in/assets/brma.png"
                 alt="BRMA Logo"
                 width={80}
                 height={80}

@@ -16,8 +16,7 @@ const page = () => {
     <div className="">
       <VideoRoundedBox />
       <HeroSection />
-      <TextBanner />
-     
+      <TextBanner />     
         <RiceMillsChallenges />
         <Strategic />
       <BannerText />

@@ -107,7 +107,7 @@ export default function FullScreenImageVideo() {
         <div className="absolute top-4 left-0 sm:top-4 sm:left-0 lg:top-2 lg:left-2 xl:top-10 xl:left-6 2xl:top-8 2xl:left-9 z-30">
           <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 xl:w-22 xl:h-22 2xl:w-26 2xl:h-26 flex items-center justify-center overflow-hidden rounded-full relative">
             <Image
-              src="/assets/brma.png"
+              src="https://brma-web.smepulse.in/assets/brma.png"
               alt="BRMA Logo"
               fill
               sizes="(max-width: 640px) 48px, (max-width: 1024px) 64px, (max-width: 1280px) 80px, 96px"
@@ -177,7 +177,7 @@ export default function FullScreenImageVideo() {
             <div className="bg-[#23433E] px-2 pr-2 sm:pr-3 xl:px-2 xl:pr-2 2xl:px-3 2xl:pr-3 flex items-center gap-1 xl:gap-1 2xl:gap-2">
               <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-8 lg:h-8 xl:w-10 xl:h-9 2xl:w-9 2xl:h-9 relative rounded-full border border-white overflow-hidden">
                 <Image
-                  src="/assets/user.jpg"
+                  src="https://brma-web.smepulse.in/assets/user.jpg"
                   alt="Profile"
                   fill
                   sizes="(max-width: 640px) 24px, (max-width: 1024px) 32px, (max-width: 1280px) 40px, 40px"
@@ -217,7 +217,7 @@ export default function FullScreenImageVideo() {
               <video
                 ref={videoRef}
                 className="w-full h-full min-h-90vh object-cover"
-                src="/assets/banner_video.mp4"
+                src="https://brma-web.smepulse.in/assets/banner_video.mp4"
                 autoPlay
                 loop
                 muted
@@ -233,7 +233,7 @@ export default function FullScreenImageVideo() {
               <video
                 ref={mobileVideoRef}
                 className="mobile-video w-full h-screen object-cover"
-                src="/assets/banner_video.mp4"
+                src="https://brma-web.smepulse.in/assets/banner_video.mp4"
                 autoPlay
                 loop
                 muted
@@ -251,7 +251,7 @@ export default function FullScreenImageVideo() {
             <div className="w-full h-screen absolute inset-0">
               <video
                 className="w-full h-screen object-cover"
-                src="/assets/banner_video.mp4"
+                src="https://brma-web.smepulse.in/assets/banner_video.mp4"
                 autoPlay
                 loop
                 muted
@@ -307,7 +307,7 @@ export default function FullScreenImageVideo() {
                 <div className="flex flex-col items-center">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full overflow-hidden flex items-center justify-center relative">
                     <Image
-                      src="/assets/stat_logo.png"
+                      src="https://brma-web.smepulse.in/assets/stat_logo.png"
                       alt="Since 1944"
                       fill
                       sizes="(max-width: 640px) 32px, (max-width: 1024px) 48px, (max-width: 1280px) 56px, 64px"
@@ -363,7 +363,7 @@ export default function FullScreenImageVideo() {
             <div className="flex flex-col h-48 lg:h-48 xl:h-56 2xl:h-48 w-full mb-4 lg:mb-5 xl:mb-6 2xl:mb-7 rounded-xl xl:rounded-2xl 2xl:rounded-3xl overflow-hidden">
               <div className="relative h-[55%] lg:h-[58%] xl:h-[55%] 2xl:h-[58%] w-full">
                 <Image
-                  src="/assets/news1.jpg"
+                  src="https://brma-web.smepulse.in/assets/news1.jpg"
                   alt="News 1"
                   fill
                   sizes="(max-width: 1024px) 320px, (max-width: 1280px) 340px, 380px"
@@ -386,7 +386,7 @@ export default function FullScreenImageVideo() {
             <div className="flex flex-col h-48 lg:h-48 xl:h-36 2xl:h-44 w-full rounded-xl xl:rounded-2xl 2xl:rounded-3xl overflow-hidden">
               <div className="relative h-[55%] lg:h-[58%] xl:h-[55%] 2xl:h-[58%] w-full">
                 <Image
-                  src="/assets/news2.jpg"
+                  src="https://brma-web.smepulse.in/assets/news2.jpg"
                   alt="News 2"
                   fill
                   sizes="(max-width: 1024px) 320px, (max-width: 1280px) 340px, 380px"

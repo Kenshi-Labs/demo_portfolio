@@ -7,23 +7,23 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    img: "grain_rice",
+    img: "https://brma-web.smepulse.in/assets/grain_rice.jpg",
     text: "Rice millers struggle with procurement and supply‑chain issues.",
   },
   {
-    img: "bran_grain",
+    img: "https://brma-web.smepulse.in/assets/bran_grain.jpg",
     text: "There is a lack of access to modern milling technology.",
   },
   {
-    img: "open_grain",
+    img: "https://brma-web.smepulse.in/assets/open_grain.jpg",
     text: "Inadequate storage facilities lead to high post‑harvest losses.",
   },
   {
-    img: "field_rice",
+    img: "https://brma-web.smepulse.in/assets/field_rice.jpg",
     text: "Fluctuating market prices impact profitability.",
   },
   {
-    img: "rice_grain",
+    img: "https://brma-web.smepulse.in/assets/rice_grain.jpg",
     text: "Labor shortages and poor infrastructure are common challenges.",
   },
 ];
@@ -130,7 +130,7 @@ const RiceMillsChallenges = () => {
                   className="w-full h-full relative"
                 >
                   <Image
-                    src={`/assets/${slides[currentIndex].img}.jpg`}
+                    src={slides[currentIndex].img}
                     alt="Rice Field"
                     fill
                     className="object-cover"
@@ -201,7 +201,7 @@ const RiceMillsChallenges = () => {
                   }`}
                 >
                   <Image
-                    src={`/assets/${slide.img}.jpg`}
+                    src={slide.img}
                     alt={`thumb-${i + 1}`}
                     width={80}
                     height={80}
@@ -256,8 +256,7 @@ const RiceMillsChallenges = () => {
                       className="cursor-pointer hover:scale-105 transition-transform"
                     >
                       <Image
-                        src={`/assets/${slide.img}.jpg`}
-                        alt={`thumb-${slide.index + 1}`}
+                        src={slide.img}                        alt={`thumb-${slide.index + 1}`}
                         width={120}
                         height={120}
                         className="rounded-xl object-cover w-20 h-20 lg:w-30 lg:h-28 xl:w-46 xl:h-36 2xl:w-42 2xl:h-36"
@@ -383,7 +382,7 @@ const RiceMillsChallenges = () => {
         className="w-full h-full"
       >
         <Image
-          src={`/assets/${slides[currentIndex].img}.jpg`}
+          src={slides[currentIndex].img}
           alt="Rice Field"
           fill
           className="object-cover"
